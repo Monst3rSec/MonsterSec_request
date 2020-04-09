@@ -8,9 +8,7 @@ async def fetch(url,data,session):
         return await response.read()
 
 async def run():
-    url="https://qacfrcrm.tafe.com/index.php?entryPoint=validateOTP"
-    data={'pin':2222,'mob_no':8110093393}
-#    url = "http://localhost:8080/{}"
+    url = "http://localhost:8080/{}"
     tasks = []
 
     # Fetch all responses within one Client session,
